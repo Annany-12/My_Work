@@ -4,7 +4,6 @@
 #include <string>
 using namespace std;
 
-
 class LinearProbingHashTable {
     vector<pair<string, string>> table;
     int size;
@@ -82,8 +81,8 @@ int main() {
     cout << "Enter number of clients: ";
     cin >> numClients;
 
-    LinearProbingHashTable linearHashTable(10);
-    SeparateChainingHashTable chainingHashTable(10);
+    LinearProbingHashTable linearHashTable(5);
+    SeparateChainingHashTable chainingHashTable(5);
 
     for (int i = 0; i < numClients; i++) {
         string name, phoneNumber;
@@ -107,3 +106,13 @@ int main() {
 
     return 0;
 }
+
+// Num clients = 5
+
+// Alice 12345
+// Bob 23456
+// Carol 34567
+// Dave 45678
+// Eve 56789
+
+// Search: Eve
