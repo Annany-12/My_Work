@@ -34,6 +34,7 @@ vector<Job> jobScheduling(vector<Job>& jobs, int maxDeadline) {
 
 int main() {
     vector<Job> jobs = {
+     // {id, deadline, profit}
         {'A', 2, 100},
         {'B', 1, 19},
         {'C', 2, 27},
